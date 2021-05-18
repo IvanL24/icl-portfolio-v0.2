@@ -1,0 +1,49 @@
+
+.container {
+
+  display: block;
+
+
+
+
+  .landing {
+
+    display: block;
+    margin: 10vw 25vw;
+
+    // message style
+    .note {
+
+      margin-bottom: 2vw;
+
+      h2 {
+
+        margin: 5px 0;
+        // font-size: 35px;
+        font-size: clamp(8px, 3vw, 50px);
+
+
+      }
+
+    }
+
+    // project button
+    .project__button a {
+
+      text-decoration: none;
+      font-size: clamp(8px, 2vw, 20px);
+      color: #ffffff;
+
+
+      margin-left: 3vw;
+      background-color: #ff304f;
+      padding: .6vw 1vw;
+
+      
+    }
+
+
+  }
+
+
+}

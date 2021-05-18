@@ -1,0 +1,27 @@
+.container {
+  display: block;
+}
+
+.container .landing {
+  display: block;
+  margin: 10vw 25vw;
+}
+
+.container .landing .note {
+  margin-bottom: 2vw;
+}
+
+.container .landing .note h2 {
+  margin: 5px 0;
+  font-size: clamp(8px, 3vw, 50px);
+}
+
+.container .landing .project__button a {
+  text-decoration: none;
+  font-size: clamp(8px, 2vw, 20px);
+  color: #ffffff;
+  margin-left: 3vw;
+  background-color: #ff304f;
+  padding: .6vw 1vw;
+}
+/*# sourceMappingURL=main.css.map */
