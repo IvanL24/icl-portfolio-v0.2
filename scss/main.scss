@@ -1,15 +1,18 @@
 
+#ivan-bg {
+  position: fixed;
+  left: 45em;
+  z-index: -1;
+}
 .container {
 
   display: block;
 
-
-
-
   .landing {
 
-    display: block;
-    margin: 10vw 25vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10vw 15vw 20vw 9vw;
 
     // message style
     .note {
@@ -19,10 +22,12 @@
       h2 {
 
         margin: 5px 0;
-        // font-size: 35px;
-        font-size: clamp(8px, 3vw, 50px);
+        font-size: clamp(8px, 4vw, 18em);
 
-
+      }
+      p {
+        font-size: 2em;
+        width: 60%;
       }
 
     }
@@ -33,17 +38,78 @@
       text-decoration: none;
       font-size: clamp(8px, 2vw, 20px);
       color: #ffffff;
-
-
-      margin-left: 3vw;
-      background-color: #ff304f;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
       padding: .6vw 1vw;
 
-      
     }
-
 
   }
 
+}
+  
 
+#about {
+  display: flex;
+  background-color: #004593;
+
+  #about-img img{
+    width: 32vw;
+    height: 40vw;
+    opacity: 0.4;
+  }
+
+  #about-cont {
+    margin: 1em 7em;
+    padding: 1em;
+    h1 {
+      font-size: clamp(8px, 5vw, 70px);
+      margin: 3vw 0;
+    }
+
+    p {
+      font-size: clamp(8px, 3vw, 25px);
+    }
+    section {
+      display: flex;
+      align-items: center;
+      position: absolute;
+    }
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        margin: 2em;
+      }
+      i.icon-html {
+        background: url(../resources/img/html.svg) no-repeat;
+      }
+      i.icon-css {
+        background: url(../resources/img/css.svg) no-repeat;
+      }
+      i.icon-scss {
+        background: url(../resources/img/Sass.svg) no-repeat;
+      }
+      i.icon-figma {
+        background: url(../resources/img/Figma.svg) no-repeat;
+      }
+      i.icon-js {
+        background: url(../resources/img/JavaScript.svg) no-repeat;
+      }
+      i.icon-java {
+        background: url(../resources/img/Java.svg) no-repeat;
+      }
+    }
+  }
+  
+}
+  
+i {
+  width: 15rem;
+  height: 15rem;
 }

@@ -1,10 +1,22 @@
+#ivan-bg {
+  position: fixed;
+  left: 45em;
+  z-index: -1;
+}
+
 .container {
   display: block;
 }
 
 .container .landing {
-  display: block;
-  margin: 10vw 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10vw 15vw 20vw 9vw;
 }
 
 .container .landing .note {
@@ -13,15 +25,102 @@
 
 .container .landing .note h2 {
   margin: 5px 0;
-  font-size: clamp(8px, 3vw, 50px);
+  font-size: clamp(8px, 4vw, 18em);
+}
+
+.container .landing .note p {
+  font-size: 2em;
+  width: 60%;
 }
 
 .container .landing .project__button a {
   text-decoration: none;
   font-size: clamp(8px, 2vw, 20px);
   color: #ffffff;
-  margin-left: 3vw;
-  background-color: #ff304f;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
   padding: .6vw 1vw;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #004593;
+}
+
+#about #about-img img {
+  width: 32vw;
+  height: 40vw;
+  opacity: 0.4;
+}
+
+#about #about-cont {
+  margin: 1em 7em;
+  padding: 1em;
+}
+
+#about #about-cont h1 {
+  font-size: clamp(8px, 5vw, 70px);
+  margin: 3vw 0;
+}
+
+#about #about-cont p {
+  font-size: clamp(8px, 3vw, 25px);
+}
+
+#about #about-cont section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+#about #about-cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about #about-cont ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em;
+}
+
+#about #about-cont ul i.icon-html {
+  background: url(../resources/img/html.svg) no-repeat;
+}
+
+#about #about-cont ul i.icon-css {
+  background: url(../resources/img/css.svg) no-repeat;
+}
+
+#about #about-cont ul i.icon-scss {
+  background: url(../resources/img/Sass.svg) no-repeat;
+}
+
+#about #about-cont ul i.icon-figma {
+  background: url(../resources/img/Figma.svg) no-repeat;
+}
+
+#about #about-cont ul i.icon-js {
+  background: url(../resources/img/JavaScript.svg) no-repeat;
+}
+
+#about #about-cont ul i.icon-java {
+  background: url(../resources/img/Java.svg) no-repeat;
+}
+
+i {
+  width: 15rem;
+  height: 15rem;
 }
 /*# sourceMappingURL=main.css.map */
