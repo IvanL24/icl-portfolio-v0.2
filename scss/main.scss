@@ -63,12 +63,12 @@
     margin: 1em 7em;
     padding: 1em;
     h1 {
-      font-size: clamp(8px, 5vw, 70px);
-      margin: 3vw 0;
+      font-size: clamp(8px, 4vw, 70px);
+      margin: 2vw 0;
     }
 
     p {
-      font-size: clamp(8px, 3vw, 25px);
+      font-size: clamp(8px, 4vw, 23px);
     }
     section {
       display: flex;
@@ -110,6 +110,6 @@
 }
   
 i {
-  width: 15rem;
-  height: 15rem;
+  width:  clamp(8px, 4vw, 15em);
+  height:  clamp(8px, 4vw, 15em);
 }
