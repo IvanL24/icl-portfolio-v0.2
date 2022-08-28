@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="scss/resets.css">
@@ -25,9 +23,9 @@
 
       <ul class="pages">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </div>
@@ -54,7 +52,7 @@
       
 
       <section class="project__button">
-        <a href="#">
+        <a href="#projects">
           Check out my projects
         </a>
       </section>
@@ -70,10 +68,10 @@
     </section>
     <section id="about-cont">
       <h1>ABOUT ME</h1>
-      <section>
-        <img src="./resources/img/ABOUT MEabout-me-img.png" alt="">
+      <section id="about-bg">
+        <!-- <img src="./resources/img/ABOUT MEabout-me-img.png" alt=""> -->
       </section>
-      <p>I am a budding fron-end developer that enjoys his food and nap time. I got interested in creating UI designs and buidling them using the languages that I learned.</p>
+      <p>I am a budding front-end developer based in Calgary, Alberta that enjoys food and nap time. I got interested in creating UI designs and buidling them using the languages that I learned throughout my learning process.</p>
       
 
     <h1><span>ACQUIRED</span> SKILLS</h1>
@@ -105,23 +103,33 @@
   </div>
 
   <div id="projects">
-    
+    <h1>PROJECTS</h1>
+    <div class="cards">
+      <div id="card"></div>
+      <div id="card"></div>
+      <div id="card"></div>
+      <div id="card"></div>
+      <div id="soon"><p><strong>More to come. . .</strong></p></div>
+    </div>
   </div>
 
   <div id="contact">
     <h1>GET IN TOUCH. . .</h1>
     <div id="methods">
+      <section id="phone">
+            <a href="tel:5879177046" class="contact-i"></a>
+            <p>
+              Want to have an in-person chat? Click to give me a call.
+            </p>
+      </section>
       <section>
+        <a href="mailto:lavenaivan@gmail.com" class="email-i"></a>
         <p>
-          Want to have an in-persion chat?
+          You can also reach me by sending an email.
         </p>
       </section>
       <section>
-        <p>
-          Too shy? You can send me an email.
-        </p>
-      </section>
-      <section>
+        <a href="https://www.linkedin.com/in/ivanl24/" class="linkedin-i"></a>
         <p>
           Check my profile to see if I am a fit to your company.
         </p>

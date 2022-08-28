@@ -40,6 +40,13 @@
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: .6vw 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .landing .project__button a:hover {
+  background-color: #ffffff;
+  color: #004593;
 }
 
 #about {
@@ -56,8 +63,10 @@
 }
 
 #about #about-cont {
-  margin: 1em 7em;
-  padding: 1em;
+  background: url(../resources/img/about-me-img.png) no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  padding: 2vw 7vw;
 }
 
 #about #about-cont h1 {
@@ -117,6 +126,126 @@
 
 #about #about-cont ul i.icon-java {
   background: url(../resources/img/Java.svg) no-repeat;
+}
+
+#projects h1 {
+  font-size: clamp(8px, 4vw, 70px);
+  margin: 8vw 6vw 2vw 9vw;
+}
+
+#projects .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 2vw;
+}
+
+#projects .cards div {
+  border-radius: 41px;
+  margin: 2rem;
+  border: 1px solid #073c78;
+  width: 13vw;
+  height: 30vw;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#projects .cards #card:hover {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
+          box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
+}
+
+#projects .cards #soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .cards #soon p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#contact h1 {
+  font-size: clamp(8px, 4vw, 70px);
+  margin: 8vw 6vw 2vw 9vw;
+}
+
+#contact #methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact #methods p {
+  font-size: clamp(8px, 3vw, 23px);
+}
+
+#contact #methods section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18vw;
+  margin: 5vw;
+}
+
+#contact #methods section a {
+  width: clamp(8px, 4vw, 15em);
+  height: clamp(8px, 4vw, 15em);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#contact #methods section a.contact-i {
+  background: url(../resources/img/Phone.svg) no-repeat;
+}
+
+#contact #methods section a.contact-i:hover {
+  background: url(../resources/img/Phone-filled.svg) no-repeat;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+#contact #methods section a.email-i {
+  background: url(../resources/img/Envelope.svg) no-repeat;
+}
+
+#contact #methods section a.email-i:hover {
+  background: url(../resources/img/Envelope-filled.svg) no-repeat;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+#contact #methods section a.linkedin-i {
+  background: url(../resources/img/Linkedin.svg) no-repeat;
+}
+
+#contact #methods section a.linkedin-i:hover {
+  background: url(../resources/img/Linkedin-filled.svg) no-repeat;
 }
 
 i {

@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -58,7 +59,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin: 0 2vw;
-  font-size: clamp(8px, 3vw, 30px);
+  font-size: clamp(8px, 3vw, 20px);
 }
 
 * body header .navigation .pages li a {

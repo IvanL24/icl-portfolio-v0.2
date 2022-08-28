@@ -41,7 +41,13 @@
       border: 1px solid #ffffff;
       border-radius: 10px;
       padding: .6vw 1vw;
+      transition: 0.3s;
 
+    }
+
+    .project__button a:hover {
+      background-color: #ffffff;
+      color: #004593;
     }
 
   }
@@ -60,8 +66,10 @@
   }
 
   #about-cont {
-    margin: 1em 7em;
-    padding: 1em;
+    background: url(../resources/img/about-me-img.png) no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    padding: 2vw 7vw;
     h1 {
       font-size: clamp(8px, 4vw, 70px);
       margin: 2vw 0;
@@ -107,6 +115,97 @@
     }
   }
   
+}
+
+#projects {
+
+  h1 {
+    font-size: clamp(8px, 4vw, 70px);
+    margin: 8vw 6vw 2vw 9vw;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2vw;
+    div {
+      border-radius: 41px;
+      margin: 2rem;
+      border: 1px solid #073c78;
+      width: 13vw;
+      height: 30vw;
+      transition: all 300ms ease-in-out;
+    }
+
+    #card:hover {
+      flex-grow: 1;
+      box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
+    }
+
+    #soon {
+      display: flex;
+      align-items: center;
+      p {
+        width: max-content;
+        font-size: 4rem;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+#contact {
+  
+  h1 {
+    font-size: clamp(8px, 4vw, 70px);
+    margin: 8vw 6vw 2vw 9vw;
+  }
+
+  #methods {
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-size: clamp(8px, 3vw, 23px);
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 18vw;
+      margin: 5vw;
+
+      a {
+        width:  clamp(8px, 4vw, 15em);
+        height:  clamp(8px, 4vw, 15em);
+        transition: all 0.3s;
+      }
+      a.contact-i {
+        background: url(../resources/img/Phone.svg) no-repeat;
+      }
+      
+      a.contact-i:hover {
+        background: url(../resources/img/Phone-filled.svg) no-repeat;
+        transform: rotate(15deg);
+      }
+
+      a.email-i {
+        background: url(../resources/img/Envelope.svg) no-repeat;
+      }
+      a.email-i:hover {
+        background: url(../resources/img/Envelope-filled.svg) no-repeat;
+        transform: rotate(15deg);
+      }
+      a.linkedin-i {
+        background: url(../resources/img/Linkedin.svg) no-repeat;
+      }
+      a.linkedin-i:hover {
+        background: url(../resources/img/Linkedin-filled.svg) no-repeat;
+      }
+
+    }
+  }
 }
   
 i {
