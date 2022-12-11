@@ -1,0 +1,48 @@
+body {
+  background-color: lime;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .content p {
+  font-size: 1.8em;
+}
+
+.container .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+
+.container .content form input {
+  height: 3em;
+  border-radius: 10px;
+}
+
+.container .content form textarea {
+  width: 60em;
+  height: 30em;
+  border-radius: 10px;
+}
+
+.container .content form button {
+  position: absolute;
+  width: 10em;
+  height: 3em;
+  right: 0;
+  bottom: -5em;
+}
+/*# sourceMappingURL=contact.css.map */

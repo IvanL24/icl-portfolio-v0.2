@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(116, 167, 255);
+}
+
+#resume {
+    display: flex;
+    justify-content: space-around;
+    gap: 4em;
+
+    a {
+        font-size: 1.8em;
+        color: #000000;
+        text-decoration: none;
+    }
+
+}
+
+.container {
+    margin-top: 22em;
+    display: flex;
+    justify-content: center;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20em;
+        #profile {
+            #prf-cont {
+                overflow: hidden;
+                width: 40em;
+                height: 40em;
+                border-radius: 67px;
+                transform: rotate(-28deg);
+                background-color: aliceblue;
+                transition: all 0.3s ease-in-out;
+
+                // :hover {
+                //     transform: rotate(-25deg);
+                // }
+
+                img {
+                    position: absolute;
+                    left: -14px;
+                    top: -34px;
+                    z-index: -1;
+                    transform: rotate(25deg);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            .shadow {
+                position: absolute;
+                z-index: -1;
+                filter: blur(3em);
+                margin: 6em 1em;
+                width: 39em;
+                height: 2em;
+                background-color: #000000;
+                transition: all 0.3s ease-in-out;
+            }
+
+        }
+
+        #profile:hover {
+
+            #prf-cont:hover {
+                transform: rotate(2deg);
+
+                img:hover {
+                    transform: rotate(-1deg);
+                }
+            }
+            .shadow {
+                width: 40em;
+            }
+        }
+
+        #message {
+            width: 25%;
+            font-size: 1.8em;
+        }
+    }
+}

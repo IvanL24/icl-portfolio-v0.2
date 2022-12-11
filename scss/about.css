@@ -1,0 +1,97 @@
+body {
+  background-color: #74a7ff;
+}
+
+#resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 4em;
+}
+
+#resume a {
+  font-size: 1.8em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 22em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20em;
+}
+
+.container .content #profile #prf-cont {
+  overflow: hidden;
+  width: 40em;
+  height: 40em;
+  border-radius: 67px;
+  -webkit-transform: rotate(-28deg);
+          transform: rotate(-28deg);
+  background-color: aliceblue;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .content #profile #prf-cont img {
+  position: absolute;
+  left: -14px;
+  top: -34px;
+  z-index: -1;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .content #profile .shadow {
+  position: absolute;
+  z-index: -1;
+  -webkit-filter: blur(3em);
+          filter: blur(3em);
+  margin: 6em 1em;
+  width: 39em;
+  height: 2em;
+  background-color: #000000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .content #profile:hover #prf-cont:hover {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.container .content #profile:hover #prf-cont:hover img:hover {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.container .content #profile:hover .shadow {
+  width: 40em;
+}
+
+.container .content #message {
+  width: 25%;
+  font-size: 1.8em;
+}
+/*# sourceMappingURL=about.css.map */

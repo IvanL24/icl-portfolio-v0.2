@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="scss/resets.css">
+  <link rel="stylesheet" href="scss/contact.css">
+
+  <!-- <script type="module" src="./js/main.js"></script> -->
+
+  <title>Home</title>
+</head>
+<body>
+  <header>
+
+    <!-- Header navigation section -->
+    <div id="header">
+
+      <ul class="logo">
+        <!-- <a href="#">Ivan Lavena</a> -->
+      </ul>
+
+      <ul id="navigation">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/works.html">Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/file/Ivan-resume.docx" download="/file/Ivan-resume.docx" id="res">Resume</a></li>
+      </ul>
+
+    </div>
+
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <h1>Interested in working together?</h1>
+      <p>Send me a mail and lets talk about it over a cup of coffee.</p>
+      <form onsubmit="Email.send()">
+          <label for="subject">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject">
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>

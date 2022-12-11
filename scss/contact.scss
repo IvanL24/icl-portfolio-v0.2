@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(0, 255, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    .content {
+
+        h1 {
+
+        }
+
+        p {
+            font-size: 1.8em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            position: relative;
+
+            input {
+                height: 3em;
+                border-radius: 10px;
+            }
+
+            textarea {
+                width: 60em;
+                height: 30em;
+                border-radius: 10px;
+
+            }
+
+            button {
+                position: absolute;
+                width: 10em;
+                height: 3em;
+                right: 0;
+                bottom: -5em;
+                
+            }
+        }
+    }
+}

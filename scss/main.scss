@@ -1,214 +1,49 @@
 
-#ivan-bg {
-  position: fixed;
-  left: 45em;
-  z-index: -1;
-}
-.container {
+// ////////// home page start //////////
 
-  display: block;
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  .landing {
+  h3 {
+    font-size: 2em;
+  }
 
+  h1 {
+    font-size: 8em;
+    margin:0;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  #note {
+    font-size: 1em;
+  }
+
+  #pages {
     display: flex;
     flex-direction: column;
-    margin: 10vw 15vw 20vw 9vw;
-
-    // message style
-    .note {
-
-      margin-bottom: 2vw;
-
-      h2 {
-
-        margin: 5px 0;
-        font-size: clamp(8px, 4vw, 18em);
-
-      }
-      p {
-        font-size: 2em;
-        width: 60%;
-      }
-
-    }
-
-    // project button
-    .project__button a {
-
+    margin: 5em;
+    a {
+      color: #000000;
+      font-size: 2.5em;
+      background-color: #D9D9D9;
+      padding: 0.5em 2em;
+      margin: 0.5em;
       text-decoration: none;
-      font-size: clamp(8px, 2vw, 20px);
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
       color: #ffffff;
-      border: 1px solid #ffffff;
+      background-color: #343434;
       border-radius: 10px;
-      padding: .6vw 1vw;
-      transition: 0.3s;
-
-    }
-
-    .project__button a:hover {
-      background-color: #ffffff;
-      color: #004593;
-    }
-
-  }
-
-}
-  
-
-#about {
-  display: flex;
-  background-color: #004593;
-
-  #about-img img{
-    width: 32vw;
-    height: 40vw;
-    opacity: 0.4;
-  }
-
-  #about-cont {
-    background: url(../resources/img/about-me-img.png) no-repeat;
-    background-position: right;
-    background-attachment: fixed;
-    padding: 2vw 7vw;
-    h1 {
-      font-size: clamp(8px, 4vw, 70px);
-      margin: 2vw 0;
-    }
-
-    p {
-      font-size: clamp(8px, 4vw, 23px);
-    }
-    section {
-      display: flex;
-      align-items: center;
-      position: absolute;
-    }
-    
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: flex;
-        margin: 2em;
-      }
-      i.icon-html {
-        background: url(../resources/img/html.svg) no-repeat;
-      }
-      i.icon-css {
-        background: url(../resources/img/css.svg) no-repeat;
-      }
-      i.icon-scss {
-        background: url(../resources/img/Sass.svg) no-repeat;
-      }
-      i.icon-figma {
-        background: url(../resources/img/Figma.svg) no-repeat;
-      }
-      i.icon-js {
-        background: url(../resources/img/JavaScript.svg) no-repeat;
-      }
-      i.icon-java {
-        background: url(../resources/img/Java.svg) no-repeat;
-      }
-    }
-  }
-  
-}
-
-#projects {
-
-  h1 {
-    font-size: clamp(8px, 4vw, 70px);
-    margin: 8vw 6vw 2vw 9vw;
-  }
-  .cards {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 2vw;
-    div {
-      border-radius: 41px;
-      margin: 2rem;
-      border: 1px solid #073c78;
-      width: 13vw;
-      height: 30vw;
-      transition: all 300ms ease-in-out;
-    }
-
-    #card:hover {
-      flex-grow: 1;
-      box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
-    }
-
-    #soon {
-      display: flex;
-      align-items: center;
-      p {
-        width: max-content;
-        font-size: 4rem;
-        transform: rotate(90deg);
-      }
     }
   }
 }
 
-#contact {
-  
-  h1 {
-    font-size: clamp(8px, 4vw, 70px);
-    margin: 8vw 6vw 2vw 9vw;
-  }
-
-  #methods {
-    display: flex;
-    justify-content: center;
-
-    p {
-      font-size: clamp(8px, 3vw, 23px);
-    }
-
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 18vw;
-      margin: 5vw;
-
-      a {
-        width:  clamp(8px, 4vw, 15em);
-        height:  clamp(8px, 4vw, 15em);
-        transition: all 0.3s;
-      }
-      a.contact-i {
-        background: url(../resources/img/Phone.svg) no-repeat;
-      }
-      
-      a.contact-i:hover {
-        background: url(../resources/img/Phone-filled.svg) no-repeat;
-        transform: rotate(15deg);
-      }
-
-      a.email-i {
-        background: url(../resources/img/Envelope.svg) no-repeat;
-      }
-      a.email-i:hover {
-        background: url(../resources/img/Envelope-filled.svg) no-repeat;
-        transform: rotate(15deg);
-      }
-      a.linkedin-i {
-        background: url(../resources/img/Linkedin.svg) no-repeat;
-      }
-      a.linkedin-i:hover {
-        background: url(../resources/img/Linkedin-filled.svg) no-repeat;
-      }
-
-    }
-  }
-}
-  
-i {
-  width:  clamp(8px, 4vw, 15em);
-  height:  clamp(8px, 4vw, 15em);
-}
+// //////////// home page end ///////////////////

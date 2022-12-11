@@ -1,14 +1,4 @@
-#ivan-bg {
-  position: fixed;
-  left: 45em;
-  z-index: -1;
-}
-
-.container {
-  display: block;
-}
-
-.container .landing {
+.landing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,189 +6,33 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10vw 15vw 20vw 9vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.container .landing .note {
-  margin-bottom: 2vw;
-}
-
-.container .landing .note h2 {
-  margin: 5px 0;
-  font-size: clamp(8px, 4vw, 18em);
-}
-
-.container .landing .note p {
+.landing h3 {
   font-size: 2em;
-  width: 60%;
 }
 
-.container .landing .project__button a {
-  text-decoration: none;
-  font-size: clamp(8px, 2vw, 20px);
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  padding: .6vw 1vw;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.container .landing .project__button a:hover {
-  background-color: #ffffff;
-  color: #004593;
-}
-
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #004593;
-}
-
-#about #about-img img {
-  width: 32vw;
-  height: 40vw;
-  opacity: 0.4;
-}
-
-#about #about-cont {
-  background: url(../resources/img/about-me-img.png) no-repeat;
-  background-position: right;
-  background-attachment: fixed;
-  padding: 2vw 7vw;
-}
-
-#about #about-cont h1 {
-  font-size: clamp(8px, 4vw, 70px);
-  margin: 2vw 0;
-}
-
-#about #about-cont p {
-  font-size: clamp(8px, 4vw, 23px);
-}
-
-#about #about-cont section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-}
-
-#about #about-cont ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
+.landing h1 {
+  font-size: 8em;
   margin: 0;
-  padding: 0;
 }
 
-#about #about-cont ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2em;
+.landing p {
+  font-size: 2em;
 }
 
-#about #about-cont ul i.icon-html {
-  background: url(../resources/img/html.svg) no-repeat;
+.landing #note {
+  font-size: 1em;
 }
 
-#about #about-cont ul i.icon-css {
-  background: url(../resources/img/css.svg) no-repeat;
-}
-
-#about #about-cont ul i.icon-scss {
-  background: url(../resources/img/Sass.svg) no-repeat;
-}
-
-#about #about-cont ul i.icon-figma {
-  background: url(../resources/img/Figma.svg) no-repeat;
-}
-
-#about #about-cont ul i.icon-js {
-  background: url(../resources/img/JavaScript.svg) no-repeat;
-}
-
-#about #about-cont ul i.icon-java {
-  background: url(../resources/img/Java.svg) no-repeat;
-}
-
-#projects h1 {
-  font-size: clamp(8px, 4vw, 70px);
-  margin: 8vw 6vw 2vw 9vw;
-}
-
-#projects .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 2vw;
-}
-
-#projects .cards div {
-  border-radius: 41px;
-  margin: 2rem;
-  border: 1px solid #073c78;
-  width: 13vw;
-  height: 30vw;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-#projects .cards #card:hover {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
-          box-shadow: 22px 38px 43px #121a3d, -7px -20px 43px #03356e;
-}
-
-#projects .cards #soon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#projects .cards #soon p {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-size: 4rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#contact h1 {
-  font-size: clamp(8px, 4vw, 70px);
-  margin: 8vw 6vw 2vw 9vw;
-}
-
-#contact #methods {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#contact #methods p {
-  font-size: clamp(8px, 3vw, 23px);
-}
-
-#contact #methods section {
+.landing #pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,50 +40,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 18vw;
-  margin: 5vw;
+  margin: 5em;
 }
 
-#contact #methods section a {
-  width: clamp(8px, 4vw, 15em);
-  height: clamp(8px, 4vw, 15em);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.landing #pages a {
+  color: #000000;
+  font-size: 2.5em;
+  background-color: #D9D9D9;
+  padding: 0.5em 2em;
+  margin: 0.5em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#contact #methods section a.contact-i {
-  background: url(../resources/img/Phone.svg) no-repeat;
-}
-
-#contact #methods section a.contact-i:hover {
-  background: url(../resources/img/Phone-filled.svg) no-repeat;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-#contact #methods section a.email-i {
-  background: url(../resources/img/Envelope.svg) no-repeat;
-}
-
-#contact #methods section a.email-i:hover {
-  background: url(../resources/img/Envelope-filled.svg) no-repeat;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-#contact #methods section a.linkedin-i {
-  background: url(../resources/img/Linkedin.svg) no-repeat;
-}
-
-#contact #methods section a.linkedin-i:hover {
-  background: url(../resources/img/Linkedin-filled.svg) no-repeat;
-}
-
-i {
-  width: clamp(8px, 4vw, 15em);
-  height: clamp(8px, 4vw, 15em);
+.landing #pages a:hover {
+  color: #ffffff;
+  background-color: #343434;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
