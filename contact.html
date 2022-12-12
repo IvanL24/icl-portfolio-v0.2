@@ -28,7 +28,7 @@
         <li><a href="works.html">Works</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="/file/Ivan-resume.docx" download="/file/Ivan-resume.docx" id="res">Resume</a></li>
+        <li><a href="./file/Ivan-resume.docx" download="./file/Ivan-resume.docx" id="res">Resume</a></li>
       </ul>
 
     </div>
@@ -40,11 +40,23 @@
       <h1>Interested in working together?</h1>
       <p>Send me a mail and lets talk about it over a cup of coffee.</p>
       <form action="https://formsubmit.co/2573f78231cbcfb2398cbbe01945120f" method="post">
+
+        <!-- honeypot -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- remove captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
           <label for="subject">Name</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="Name" id="name">
+
+          <label for="subject">Email</label>
+          <input type="text" name="Email" id="name">
+
           <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject">
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="text" name="Subject" id="subject">
+
+          <textarea name="Message" id="message" cols="30" rows="10"></textarea>
           <button type="submit">Send</button>
       </form>
     </div>
