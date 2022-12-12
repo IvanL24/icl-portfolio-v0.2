@@ -11,13 +11,21 @@ projects.forEach(function(assignment){
 
     outputHTML +=
 
-    `<figure class="card" style="background-image: url('${assignment.imagePath}'); :hover">
+    `<a href="${assignment.link}" target="_blank" class="card" style="background-image: url('${assignment.imagePath}');">
         
 
     
-    </figure>`
+    </a>`
 
 });
 
 card.innerHTML = outputHTML;
+
+
+
+// let figures = document.querySelector('figure');
+
+// figures.addEventListener('click', ()=>{
+//     console.log("test");
+// });
 
