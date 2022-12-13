@@ -19,65 +19,79 @@ body {
     margin-top: 22em;
     display: flex;
     justify-content: center;
+
     .content {
+        width: 60%;
+        height: 46rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20em;
+        gap: 30em;
+
+
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         #profile {
             #prf-cont {
                 overflow: hidden;
                 width: 40em;
                 height: 40em;
                 border-radius: 67px;
-                transform: rotate(-28deg);
                 background-color: aliceblue;
-                transition: all 0.3s ease-in-out;
 
-                // :hover {
-                //     transform: rotate(-25deg);
-                // }
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
 
                 img {
                     position: absolute;
                     left: -14px;
                     top: -34px;
                     z-index: -1;
-                    transform: rotate(25deg);
-                    transition: all 0.3s ease-in-out;
                 }
             }
 
-            .shadow {
-                position: absolute;
-                z-index: -1;
-                filter: blur(3em);
-                margin: 6em 1em;
-                width: 39em;
-                height: 2em;
-                background-color: #000000;
-                transition: all 0.3s ease-in-out;
-            }
-
-        }
-
-        #profile:hover {
-
-            #prf-cont:hover {
-                transform: rotate(2deg);
-
-                img:hover {
-                    transform: rotate(-1deg);
-                }
-            }
-            .shadow {
-                width: 40em;
-            }
         }
 
         #message {
             width: 25%;
             font-size: 1.8em;
         }
+
+        
+
+        .box1 {
+            width: 21em;
+            height: 21em;
+            position: absolute;
+            left: -10em;
+            top: -10em;
+            
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+    }
+
+    .box2 {
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        right: 28em;
+        bottom: 16em;
+        z-index: -1;
+        
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
