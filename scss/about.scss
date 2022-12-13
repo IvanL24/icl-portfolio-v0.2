@@ -21,7 +21,7 @@ body {
     justify-content: center;
     .content {
         width: 60%;
-        height: 46rem;
+        // height: 46rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,8 +38,8 @@ body {
         #profile {
             #prf-cont {
                 overflow: hidden;
-                width: 40em;
-                height: 40em;
+                width: 16vw;
+                height: 16vw;
                 border-radius: 25px;
                 background-color: aliceblue;
 
@@ -53,13 +53,19 @@ body {
                     left: -14px;
                     top: -34px;
                     z-index: -1;
+                    width: 17vw;
                 }
             }
 
         }
 
         #message {
-            font-size: clamp(8px, 2vw, 17px);
+            h1{
+                font-size: clamp(10px, 2vw, 24px);
+            }
+            p {
+                font-size: clamp(8px, 2vw, 17px);
+            }
         }
 
         
@@ -81,11 +87,11 @@ body {
     }
 
     .box2 {
-        width: 50em;
-        height: 50em;
+        width: 25vw;
+        height: 25vw;
         position: absolute;
-        right: 28em;
-        bottom: 16em;
+        right: 9em;
+        bottom: 14em;
         z-index: -1;
         
         background: rgba( 255, 255, 255, 0.25 );

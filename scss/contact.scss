@@ -6,9 +6,17 @@ body {
     display: flex;
     justify-content: center;
     .content {
+        padding: 3em;
+        height: 75vh;
 
-        h1 {
+        background: rgba(255, 255, 255, 0.847);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.498);
+        backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.217);
 
+        label {
+            font-size: clamp(8px, 2vw, 18px);
         }
 
         p {
@@ -28,8 +36,7 @@ body {
             }
 
             textarea {
-                width: 60em;
-                height: 30em;
+                height: 22em;
                 border-radius: 10px;
                 padding: 1em;
 
