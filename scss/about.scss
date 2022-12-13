@@ -19,14 +19,15 @@ body {
     margin-top: 22em;
     display: flex;
     justify-content: center;
-
     .content {
         width: 60%;
         height: 46rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30em;
+        gap: 10vw;
+        padding: 5em;
+    
 
 
         background: rgba( 255, 255, 255, 0.25 );
@@ -39,7 +40,7 @@ body {
                 overflow: hidden;
                 width: 40em;
                 height: 40em;
-                border-radius: 67px;
+                border-radius: 25px;
                 background-color: aliceblue;
 
                 background: rgba( 255, 255, 255, 0.25 );
@@ -58,8 +59,7 @@ body {
         }
 
         #message {
-            width: 25%;
-            font-size: 1.8em;
+            font-size: clamp(8px, 2vw, 17px);
         }
 
         
