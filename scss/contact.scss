@@ -5,6 +5,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    z-index: -1;
     .content {
         padding: 3em;
         height: 75vh;

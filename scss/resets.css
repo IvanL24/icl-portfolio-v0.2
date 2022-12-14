@@ -121,7 +121,7 @@ body .hamburger div {
     transition: 0.3s ease-in-out;
   }
   body header #header #hamburger div {
-    width: 3em;
+    width: 4em;
     height: 0.5em;
     background-color: #000000;
     -webkit-transition: all 0.3s ease-in-out;
