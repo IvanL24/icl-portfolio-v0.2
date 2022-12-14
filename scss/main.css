@@ -13,6 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  z-index: -1;
 }
 
 .landing h3 {

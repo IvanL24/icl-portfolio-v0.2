@@ -1,31 +1,22 @@
-import { projects } from "./projects.js";
+const menu = document.getElementById('hamburger');
 
-let outputHTML = '';
-
-let card = document.querySelector('.projects')
-
-console.log(projects)
-
-projects.forEach(function(assignment){
-    console.log(assignment);
-
-    outputHTML +=
-
-    `<a href="${assignment.link}" target="_blank" class="card" style="background-image: url('${assignment.imagePath}');">
-        
-
+menu.addEventListener('click', ()=>{
+    console.log("working");
     
-    </a>`
-
 });
 
-card.innerHTML = outputHTML;
+function openSide(){
+    let side = document.getElementById('navigation');
+    side.style.width = "50%";
+
+    let one = document.getElementById('one');
+    let two = document.getElementById('two');
+    let three = document.getElementById('three');
+
+    one.style.display = "none";
+    two.style.transform = "rotate(45deg) translate(4px, 4px)";
+    three.style.transform = "rotate(-45deg) translate(3px, -3px)";
 
 
-
-// let figures = document.querySelector('figure');
-
-// figures.addEventListener('click', ()=>{
-//     console.log("test");
-// });
+}
 
