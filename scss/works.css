@@ -73,16 +73,27 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 4vw;
+  }
+  .container .content {
+    width: 100%;
+  }
   .container .content .projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container .content .projects a {
-    width: 20em;
-    height: 20em;
+    width: 95%;
+    height: 24em;
   }
 }
 /*# sourceMappingURL=works.css.map */

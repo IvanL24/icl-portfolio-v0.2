@@ -110,4 +110,20 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+@media screen and (max-width: 900px) {
+  .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .content #profile #prf-cont {
+    width: 44vw;
+    height: 44vw;
+  }
+  .container .content #profile #prf-cont img {
+    width: 47vw;
+  }
+}
 /*# sourceMappingURL=about.css.map */

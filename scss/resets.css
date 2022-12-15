@@ -27,8 +27,6 @@ body {
 }
 
 body header {
-  width: 100vw;
-  padding: 1vw;
   margin-bottom: 4vw;
 }
 
@@ -46,9 +44,11 @@ body header #header #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  gap: 4em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2vw;
+  padding: 0;
 }
 
 body header #header #navigation #res {
@@ -84,7 +84,7 @@ body ul {
 }
 
 body ul li {
-  padding: 0 4vw;
+  padding: 0 2vw;
 }
 
 body .hamburger {
@@ -103,8 +103,14 @@ body .hamburger div {
 }
 
 @media screen and (max-width: 800px) {
+  body header {
+    width: 100%;
+  }
   body header #header {
+    position: fixed;
+    width: 100vw;
     margin: 0;
+    padding: 0 2vw;
   }
   body header #header #hamburger {
     display: -webkit-box;
@@ -115,7 +121,7 @@ body .hamburger div {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5px;
-    padding: 3vw 4vw;
+    padding: 2em 1em;
     z-index: 1;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;

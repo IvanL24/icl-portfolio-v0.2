@@ -1,7 +1,16 @@
+
+let body = document.querySelector('body');
+let color = window.getComputedStyle(body,"");
+let bgcolor = color.getPropertyValue("background-color")
+
+console.log(bgcolor);
+
+const header = document.querySelector('header');
+
+header.style.backgroundColor = bgcolor;
+console.log(header.style.backgroundColor);
+
 const menu = document.getElementById('hamburger');
-
-
-
 
 const side = document.getElementById('navigation');
 
@@ -33,10 +42,6 @@ function toggleMenu(){
 
     }
 
-}
-
-
-function closeSide() {
 }
 
 

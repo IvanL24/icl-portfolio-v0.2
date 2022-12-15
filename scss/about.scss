@@ -102,3 +102,47 @@ body {
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
+
+@media screen and (max-width: 900px){
+
+    .container {
+       
+        .content {
+            flex-direction: column;
+           
+            #profile {
+                #prf-cont {
+                    width: 44vw;
+                    height: 44vw;
+    
+                    img {
+                        width: 47vw;
+                    }
+                       
+                }
+    
+            }
+    
+            #message {
+                h1{
+                  
+                }
+                p {
+                 
+                }
+            }
+    
+            
+    
+            .box1 {
+               
+            }
+    
+        }
+    
+        .box2 {
+           
+        }
+    }
+    
+}
