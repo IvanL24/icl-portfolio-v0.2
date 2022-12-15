@@ -1,3 +1,22 @@
+import { navigation } from "./navigation.js";
+
+
+let outputHTML = '';
+
+let nav = document.getElementById('navigation')
+
+navigation.forEach(function(page){
+    console.log(page);
+
+    outputHTML +=
+
+    `<li><a href="${page.path}" id="${page.id}" >${page.title}</a></li>`
+
+});
+
+
+nav.innerHTML = outputHTML;
+
 
 let body = document.querySelector('body');
 let color = window.getComputedStyle(body,"");

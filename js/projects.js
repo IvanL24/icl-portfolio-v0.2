@@ -26,5 +26,26 @@ export const projects = [
         imagePath: 'resources/img/haikyuu.png',
         link: 'https://ivanl24.github.io/Haikyuu-website/'
         
+    },
+    {
+        id:5,
+        title: 'Converter',
+        imagePath: 'resources/img/converter.png',
+        link: 'https://ivanl24.github.io/converter/'
+        
+    },
+    {
+        id:6,
+        title: 'New Cake Bakeries',
+        imagePath: 'resources/img/ncb.png',
+        link: 'https://ivanl24.github.io/newcakebakeries/'
+        
+    },
+    {
+        id:7,
+        title: 'Planteria.ltd',
+        imagePath: 'resources/img/planteria.png',
+        link: 'https://ivanl24.github.io/planteria/'
+        
     }
 ];

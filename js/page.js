@@ -4,8 +4,6 @@ let outputHTML = '';
 
 let card = document.querySelector('.projects')
 
-console.log(projects)
-
 projects.forEach(function(assignment){
     console.log(assignment);
 
