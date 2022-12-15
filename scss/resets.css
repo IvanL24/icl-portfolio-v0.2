@@ -26,6 +26,10 @@ body {
   background-repeat: no-repeat;
 }
 
+body h1 {
+  margin: 0;
+}
+
 body header {
   margin-bottom: 4vw;
 }
@@ -153,6 +157,9 @@ body .hamburger div {
     transition: 0.3s;
     padding: 0;
     overflow: hidden;
+  }
+  body header #header li {
+    margin: 0 2em;
   }
 }
 /*# sourceMappingURL=resets.css.map */

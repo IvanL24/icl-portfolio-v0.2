@@ -20,6 +20,10 @@ body {
   // background: #002651;
   background-repeat: no-repeat;
 
+  h1 {
+    margin: 0;
+  }
+
   header {
     // width: 100vw;
     margin-bottom: 4vw;
@@ -132,6 +136,10 @@ body {
           transition: 0.3s;
           padding: 0;
           overflow: hidden;
+        }
+
+        li {
+          margin: 0 2em;
         }
       }
   
