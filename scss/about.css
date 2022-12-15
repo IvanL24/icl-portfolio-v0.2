@@ -54,12 +54,23 @@ body {
 }
 
 .container .content #profile #prf-cont {
-  overflow: hidden;
-  width: 16vw;
-  height: 16vw;
+  width: 15vw;
+  height: 30vh;
   border-radius: 25px;
-  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.25);
+  background-image: url("/resources/img/me-tranparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   -webkit-backdrop-filter: blur(4px);
@@ -68,11 +79,8 @@ body {
 }
 
 .container .content #profile #prf-cont img {
-  position: absolute;
-  left: -14px;
-  top: -34px;
-  z-index: -1;
-  width: 17vw;
+  height: 30vh;
+  width: 15vw;
 }
 
 .container .content #message h1 {
@@ -84,11 +92,11 @@ body {
 }
 
 .container .content .box1 {
-  width: 21em;
-  height: 21em;
+  width: 13vw;
+  height: 18vh;
   position: absolute;
   left: -10em;
-  top: -10em;
+  top: -8em;
   background: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -100,7 +108,7 @@ body {
 
 .container .box2 {
   width: 25vw;
-  height: 25vw;
+  height: 25vh;
   position: absolute;
   right: 9em;
   bottom: 14em;

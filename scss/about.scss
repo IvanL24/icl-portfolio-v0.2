@@ -39,23 +39,27 @@ body {
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         #profile {
             #prf-cont {
-                overflow: hidden;
-                width: 16vw;
-                height: 16vw;
+                // overflow: hidden;
+                width: 15vw;
+                height: 30vh;
                 border-radius: 25px;
-                background-color: aliceblue;
-
+                // background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background: rgba( 255, 255, 255, 0.25 );
+                background-image: url("/resources/img/me-tranparent.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                 backdrop-filter: blur( 4px );
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
 
                 img {
-                    position: absolute;
-                    left: -14px;
-                    top: -34px;
-                    z-index: -1;
-                    width: 17vw;
+                    height: 30vh;
+                    width: 15vw;
                 }
             }
 
@@ -73,11 +77,11 @@ body {
         
 
         .box1 {
-            width: 21em;
-            height: 21em;
+            width: 13vw;
+            height: 18vh;
             position: absolute;
             left: -10em;
-            top: -10em;
+            top: -8em;
             
             background: rgba( 255, 255, 255, 0.25 );
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -90,7 +94,7 @@ body {
 
     .box2 {
         width: 25vw;
-        height: 25vw;
+        height: 25vh;
         position: absolute;
         right: 9em;
         bottom: 14em;
