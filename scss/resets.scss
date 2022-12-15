@@ -136,6 +136,10 @@ body {
           transition: 0.3s;
           padding: 0;
           overflow: hidden;
+
+          #res {
+            width: 0.5em 7vw;
+          }
         }
 
         li {

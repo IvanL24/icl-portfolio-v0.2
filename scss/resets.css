@@ -158,6 +158,9 @@ body .hamburger div {
     padding: 0;
     overflow: hidden;
   }
+  body header #header #navigation #res {
+    width: 0.5em 7vw;
+  }
   body header #header li {
     margin: 0 2em;
   }
