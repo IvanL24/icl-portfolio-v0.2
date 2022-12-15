@@ -1,4 +1,15 @@
-.landing {
+.container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .landing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,24 +29,24 @@
   padding: 5vw;
 }
 
-.landing h3 {
+.container .landing h3 {
   font-size: 2em;
 }
 
-.landing h1 {
+.container .landing h1 {
   font-size: 8em;
   margin: 0;
 }
 
-.landing p {
+.container .landing p {
   font-size: 2em;
 }
 
-.landing #note {
+.container .landing #note {
   font-size: 1em;
 }
 
-.landing #pages {
+.container .landing #pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +57,7 @@
   margin: 5em;
 }
 
-.landing #pages a {
+.container .landing #pages a {
   color: #000000;
   font-size: 2.5em;
   background-color: #D9D9D9;
@@ -57,7 +68,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.landing #pages a:hover {
+.container .landing #pages a:hover {
   color: #ffffff;
   background-color: #343434;
   border-radius: 10px;
