@@ -1,24 +1,25 @@
-body {
-  background-color: lime;
-}
-
 .container {
-  padding: 4vw;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
 
 .container .content {
-  padding: 3em;
-  background: rgba(255, 255, 255, 0.847);
+  width: 25%;
+  padding: 2em;
+  gap: 2em;
+  background: rgba(0, 0, 0, 0.847);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.498);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.498);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.217);
-}
-
-.container .content label {
-  font-size: clamp(8px, 2vw, 18px);
+  margin: auto;
 }
 
 .container .content p {
@@ -39,7 +40,7 @@ body {
 
 .container .content form input {
   border: none;
-  height: 3em;
+  height: 4em;
   border-radius: 10px;
   padding: 0 1em;
   -webkit-box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.12);
@@ -51,19 +52,19 @@ body {
   border-radius: 10px;
   padding: 1em;
   margin: 2em 0;
-  font-family: 'Poppins', sans-serif;
   -webkit-box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container .content form button {
   color: #ffffff;
-  font-weight: 700;
+  font-size: clamp(1rem, 1vw, 2rem);
   width: 100%;
-  height: 3em;
+  padding: 1rem;
+  margin-bottom: 1rem;
   border-radius: 10px;
   border: none;
-  background-color: rgba(0, 0, 255, 0.751);
+  background-color: rgba(15, 168, 96, 0.751);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -74,16 +75,13 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  #header {
-    z-index: 1;
-  }
   .container {
     width: 100%;
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 3vw;
+    padding: 5vw;
   }
 }
 /*# sourceMappingURL=contact.css.map */

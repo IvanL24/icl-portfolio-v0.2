@@ -1,5 +1,6 @@
 body {
-  background-color: #74a7ff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 #resume {
@@ -32,31 +33,53 @@ body {
 }
 
 .container .content {
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 15rem;
+}
+
+.container .content #brief {
+  position: relative;
+  top: 10rem;
+  font-size: 5rem;
+}
+
+.container .content #bio {
+  gap: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10vw;
-  padding: 5em;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
 }
 
-.container .content #profile #prf-cont {
-  width: 15vw;
-  height: 30vh;
-  border-radius: 25px;
+.container .content #bio #b {
+  font-size: 39rem;
+  left: 16rem;
+  top: 5rem;
+}
+
+.container .content #bio #i {
+  font-size: 39rem;
+  left: 55rem;
+  top: 5rem;
+}
+
+.container .content #bio #prf-cont {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,69 +94,38 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(69, 69, 69, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(69, 69, 69, 0.37);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 30px solid black;
 }
 
-.container .content #profile #prf-cont img {
-  height: 30vh;
-  width: 15vw;
+.container .content #message ul {
+  list-style-type: circle;
 }
 
-.container .content #message h1 {
-  font-size: clamp(10px, 2vw, 24px);
-}
-
-.container .content #message p {
-  font-size: clamp(8px, 2vw, 17px);
-}
-
-.container .content .box1 {
-  width: 13vw;
-  height: 18vh;
-  position: absolute;
-  left: -10em;
-  top: -8em;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.container .box2 {
-  width: 25vw;
-  height: 25vh;
-  position: absolute;
-  right: 9em;
-  bottom: 14em;
-  z-index: -1;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.container .content #message ul li {
+  font-size: clamp(1rem, 1vw, 3rem);
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    margin-top: 7vh;
+  }
   .container .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 50ch;
+    padding: 3em;
   }
-  .container .content #profile #prf-cont {
-    width: 44vw;
-    height: 44vw;
+  .container .content #prf-cont {
+    width: 100%;
+    border-radius: 15px;
   }
-  .container .content #profile #prf-cont img {
+  .container .content #prf-cont img {
     width: 47vw;
   }
 }

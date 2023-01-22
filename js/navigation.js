@@ -26,7 +26,7 @@ export const navigation = [
     {
         id: 'res',
         title: 'Resume',
-        path: '/file/Ivan-resume.docx'
+        path: '/file/Ivan-Lavena-resume.docx'
         
     }
 ];

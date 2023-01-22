@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(116, 167, 255);
+    // background-color: rgb(116, 167, 255);
+    transition: 300ms;
 }
 
 #resume {
@@ -22,28 +23,42 @@ body {
     justify-content: center;
     z-index: -1;
     .content {
-        width: 60%;
-        // height: 46rem;
+        width: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 10vw;
-        padding: 5em;
-    
+        margin-bottom: 15rem;
+
+        #brief {
+            position: relative;
+            top: 10rem;
+            font-size: 5rem;
+        }
 
 
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        #profile {
+        #bio {
+            gap: 6rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            // left: -37rem;
+            
+            #b {
+                font-size: 39rem;
+                left: 16rem;
+                top: 5rem;
+            }
+            
+            #i {
+                font-size: 39rem;
+                left: 55rem;
+                top: 5rem;
+            }
+
             #prf-cont {
-                // overflow: hidden;
-                width: 15vw;
-                height: 30vh;
-                border-radius: 25px;
-                // background-color: aliceblue;
+                width: 30rem;
+                height: 30rem;
+                border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -53,101 +68,42 @@ body {
                 background-repeat: no-repeat;
                 background-size: cover;
 
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                box-shadow: 0 8px 32px 0 rgba(69, 69, 69, 0.37);
                 backdrop-filter: blur( 4px );
-                border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-                img {
-                    height: 30vh;
-                    width: 15vw;
-                }
+                border: 30px solid rgb(0, 0, 0);
             }
-
         }
 
         #message {
-            h1{
-                font-size: clamp(10px, 2vw, 24px);
-            }
-            p {
-                font-size: clamp(8px, 2vw, 17px);
+            ul {
+                list-style-type: circle;
+
+                li {
+                    
+                    font-size: clamp(1rem, 1vw, 3rem)
+                }
             }
         }
-
-        
-
-        .box1 {
-            width: 13vw;
-            height: 18vh;
-            position: absolute;
-            left: -10em;
-            top: -8em;
-            
-            background: rgba( 255, 255, 255, 0.25 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 4px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
-        }
-
-    }
-
-    .box2 {
-        width: 25vw;
-        height: 25vh;
-        position: absolute;
-        right: 9em;
-        bottom: 14em;
-        z-index: -1;
-        
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
 
 @media screen and (max-width: 900px){
 
     .container {
-       
+       margin-top: 7vh;
         .content {
             flex-direction: column;
+            width: 50ch;
+            padding: 3em;
            
-            #profile {
                 #prf-cont {
-                    width: 44vw;
-                    height: 44vw;
+                    width: 100%;
+                    border-radius: 15px;
     
                     img {
                         width: 47vw;
                     }
-                       
                 }
-    
-            }
-    
-            #message {
-                h1{
-                  
-                }
-                p {
-                 
-                }
-            }
-    
-            
-    
-            .box1 {
-               
-            }
-    
-        }
-    
-        .box2 {
-           
         }
     }
-    
 }

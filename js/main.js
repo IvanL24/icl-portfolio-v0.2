@@ -18,16 +18,16 @@ navigation.forEach(function(page){
 nav.innerHTML = outputHTML;
 
 
-let body = document.querySelector('body');
-let color = window.getComputedStyle(body,"");
-let bgcolor = color.getPropertyValue("background-color")
+// let body = document.querySelector('body');
+// let color = window.getComputedStyle(body,"");
+// let bgcolor = color.getPropertyValue("background-color")
 
-console.log(bgcolor);
+// console.log(bgcolor);
 
-const header = document.querySelector('header');
+// const header = document.querySelector('header');
 
-header.style.backgroundColor = bgcolor;
-console.log(header.style.backgroundColor);
+// header.style.backgroundColor = bgcolor;
+// console.log(header.style.backgroundColor);
 
 const menu = document.getElementById('hamburger');
 

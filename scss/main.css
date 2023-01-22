@@ -42,8 +42,10 @@
   font-size: 2em;
 }
 
-.container .landing #note {
-  font-size: 1em;
+.container .landing .note {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
 }
 
 .container .landing #pages {
@@ -68,9 +70,51 @@
   transition: all 0.3s ease-in-out;
 }
 
-.container .landing #pages a:hover {
+.container .landing #pages :hover {
   color: #ffffff;
   background-color: #343434;
   border-radius: 10px;
+}
+
+.container #social {
+  position: absolute;
+  bottom: 25rem;
+  left: 15rem;
+}
+
+.container #social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.container #social ul li a {
+  margin: 0;
+  position: relative;
+  font-size: 3rem;
+  color: #000000;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.container #social ul li :hover {
+  color: #4bb1ff;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    gap: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
