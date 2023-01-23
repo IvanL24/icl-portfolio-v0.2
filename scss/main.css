@@ -4,29 +4,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.container .landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  z-index: -1;
-  height: 70%;
-  padding: 5vw;
 }
 
 .container .landing h3 {
@@ -34,8 +15,9 @@
 }
 
 .container .landing h1 {
-  font-size: 8em;
+  font-size: 10em;
   margin: 0;
+  font-weight: 500;
 }
 
 .container .landing p {
@@ -79,7 +61,7 @@
 .container #social {
   position: absolute;
   bottom: 25rem;
-  left: 15rem;
+  right: 35rem;
 }
 
 .container #social ul {

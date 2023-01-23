@@ -2,25 +2,18 @@
   height: 100%;
   width: 100%;
   display: flex;
-  // align-items: center;
+  margin: auto;
   justify-content: center;
   .landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: -1;
-    height: 70%;
-    padding: 5vw;
   
     h3 {
       font-size: 2em;
     }
   
     h1 {
-      font-size: 8em;
+      font-size: 10em;
       margin:0;
+      font-weight: 500;
     }
   
     p {
@@ -56,7 +49,7 @@
   #social {
       position: absolute;
       bottom: 25rem;
-      left: 15rem;
+      right: 35rem;
 
       ul {
         display: flex;
