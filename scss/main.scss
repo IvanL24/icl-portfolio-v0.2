@@ -16,6 +16,18 @@
       margin:0;
       font-weight: 500;
       transition: 300ms ease-in-out;
+      animation: headerDrop 2s forwards ease;
+    }
+
+    @keyframes headerDrop {
+      0% {
+        transform: rotate(0) translateX(0) translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: rotate(0) translateX(0px) translateY(0);
+        opacity: 1;
+      }
     }
   
     p {
@@ -29,6 +41,40 @@
     span {
       font-size: 6rem;
       font-weight: 200;
+    }
+
+    #Web {
+      animation: Web 3s forwards ease;
+      animation-delay: 2s;
+      opacity: 0;
+    }
+
+    @keyframes Web {
+      0% {
+        transform: rotate(0) translateX(0) translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: rotate(0) translateX(0px) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    #Ui {
+      animation: Ui 5s forwards ease;
+      animation-delay: 4s;
+      opacity: 0;
+    }
+
+    @keyframes Ui {
+      0% {
+        transform: rotate(0) translateX(0) translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: rotate(0) translateX(0px) translateY(0);
+        opacity: 1;
+      }
     }
   
     .note {

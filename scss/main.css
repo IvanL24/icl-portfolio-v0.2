@@ -21,6 +21,34 @@
   font-weight: 500;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  -webkit-animation: headerDrop 2s forwards ease;
+          animation: headerDrop 2s forwards ease;
+}
+
+@-webkit-keyframes headerDrop {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerDrop {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
 }
 
 .container .landing p {
@@ -41,6 +69,74 @@
 .container .landing span {
   font-size: 6rem;
   font-weight: 200;
+}
+
+.container .landing #Web {
+  -webkit-animation: Web 3s forwards ease;
+          animation: Web 3s forwards ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes Web {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Web {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
+}
+
+.container .landing #Ui {
+  -webkit-animation: Ui 5s forwards ease;
+          animation: Ui 5s forwards ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  opacity: 0;
+}
+
+@-webkit-keyframes Ui {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Ui {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-100px);
+            transform: rotate(0) translateX(0) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0px) translateY(0);
+            transform: rotate(0) translateX(0px) translateY(0);
+    opacity: 1;
+  }
 }
 
 .container .landing .note {
