@@ -47,5 +47,17 @@ export const projects = [
         imagePath: 'resources/img/planteria.png',
         link: 'https://ivanl24.github.io/planteria/'
         
+    },
+    {
+        id:8,
+        title: 'Road Bike',
+        imagePath: 'resources/img/speed-home.png',
+        link:'https://www.figma.com/file/uZYiX0SemNqffDgEl1YuMp/road-bike?node-id=6%3A35&t=t6kWfnZOJliKlKSG-1'
+    },
+    {
+        id:9,
+        title: 'Dine & Dash',
+        imagePath: 'resources/img/D&D.png',
+        link:'https://www.figma.com/file/zdLrnnbknr9RB0WUL21G4y/dine-n-dash?node-id=0%3A1&t=E5i7TogydeXZbtgO-1'
     }
 ];

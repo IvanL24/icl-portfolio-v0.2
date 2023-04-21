@@ -6,7 +6,6 @@ let outputHTML = '';
 let nav = document.getElementById('navigation')
 
 navigation.forEach(function(page){
-    console.log(page);
 
     outputHTML +=
 

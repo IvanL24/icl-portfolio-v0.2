@@ -67,7 +67,7 @@
 }
 
 .container .landing span {
-  font-size: 6rem;
+  font-size: clamp(3rem, 3vw, 6rem);
   font-weight: 200;
 }
 
@@ -216,7 +216,10 @@
 
 @media screen and (max-width: 800px) {
   body {
-    gap: 5rem;
+    gap: 3rem;
+  }
+  body #social {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

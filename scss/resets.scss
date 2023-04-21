@@ -35,12 +35,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e9e9e9;
 
   min-height: 100vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  background-repeat: no-repeat;
 
   h1 {
     margin: 0;
@@ -148,7 +148,7 @@ body {
           top: 0px;
           height: 100vh;
           width: 0;
-          background-color: orange;
+          background-color: rgb(97, 97, 97);
           margin: 0;
           justify-content: center;
           gap: 5vh;

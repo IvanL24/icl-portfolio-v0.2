@@ -35,7 +35,21 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
-            }
+                animation: cards 0.5s forwards ease-in-out;
+                
+
+                @keyframes cards {
+                    0% {
+                    transform: rotate(0) translateX(0) translateY(-100px);
+                    opacity: 0;
+                    }
+                    100% {
+                    transform: rotate(0) translateX(0px) translateY(0);
+                    opacity: 1;
+                    
+                    }
+                } 
+            }  
 
             :hover {
                 transform: scale(1.1);
