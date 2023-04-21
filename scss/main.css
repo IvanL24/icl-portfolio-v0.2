@@ -10,7 +10,7 @@
   font-weight: 100;
 }
 .container .landing h1 {
-  font-size: 10em;
+  font-size: clamp(30px, 15vw, 500px);
   margin: 0;
   font-weight: 500;
   transition: 300ms ease-in-out;
