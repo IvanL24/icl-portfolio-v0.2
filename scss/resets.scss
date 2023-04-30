@@ -55,6 +55,8 @@ body {
       display: flex;
       justify-content: space-between;
       margin: 2rem 3rem;
+      flex-direction: row-reverse;
+      width: 100%;
 
       #navigation {
         display: flex;
@@ -124,6 +126,7 @@ body {
       width: 100%;
       margin: 0;
       padding: 0 2vw;
+      flex-direction: row;
   
       nav {
         #hamburger{
@@ -148,7 +151,7 @@ body {
           top: 0px;
           height: 100vh;
           width: 0;
-          background-color: rgb(97, 97, 97);
+          background-color: #FFFFFF;
           margin: 0;
           justify-content: center;
           gap: 5vh;

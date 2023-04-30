@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="scss/resets.css">
   <link rel="stylesheet" href="scss/works.css">
 
-  <script type="module" src="./js/page.js"></script>
+  <script type="module" src="./js/allProjects.js"></script>
+  <script type="module" src="./js/desProjects.js"></script>
+  <script type="module" src="./js/devProjects.js"></script>
 
   <title>Home</title>
 </head>
@@ -34,14 +36,78 @@
   <div class="container">
     <div class="content">
       <h1>Works</h1>
-      <div class="projects">
-          <!-- Works gallery -->
+      
+      <section id="filter">
+        <button value="all" onclick="changeContent(this.value)">All</button>
+        <button value="design" onclick="changeContent(this.value)">Designs</button>
+        <button value="develope" onclick="changeContent(this.value)">Codes</button>
+      </section>
+      
+      <div class="projects" id="all">
+          <!--All Works gallery -->
       </div>
+      <div class="dev" id="dev">
+          <!--Programming Works only gallery -->
+      </div>
+      <div class="design" id="des">
+          <!--Design Works only gallery -->
+      
+        </div>
     </div>
   </div>
 
 
   <script src="js/main.js" type="module"></script>
+
+  <script>
+    let desId = document.getElementById('des');
+    let devId = document.getElementById('dev');
+    let allId = document.getElementById('all');
+
+    function changeContent(type){
+
+      let screen = window.matchMedia("(max-width: 900px)")
+
+      switch (type){
+        case "all":
+          
+          desId.style.display = 'none';
+          devId.style.display = 'none';
+          
+          if(screen.matches){
+            allId.style.display = 'flex';
+          } else {
+            
+            allId.style.display = 'grid';
+          }
+
+          break
+        case "design": 
+        console.log(type)
+          allId.style.display = 'none';
+          devId.style.display = 'none';
+          
+          if(screen.matches){
+            desId.style.display = 'flex';
+          } else {
+            
+            desId.style.display = 'grid';
+          }
+          break
+        case "develope": 
+          allId.style.display = 'none';
+          desId.style.display = 'none';
+          
+          if(screen.matches){
+            devId.style.display = 'flex';
+          } else {
+            
+            devId.style.display = 'grid';
+          }
+          break 
+      }
+    }
+  </script>
 
 
 </body>

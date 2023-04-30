@@ -105,9 +105,9 @@
   }
 
   #social {
-      position: absolute;
-      bottom: 25rem;
-      right: 35rem;
+      position: fixed;
+      bottom: 6rem;
+      left: 5%;
 
       ul {
         display: flex;
@@ -138,8 +138,5 @@
   body {
     gap: 3rem;
 
-    #social {
-      display: none;
-    }
   }
 }

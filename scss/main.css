@@ -92,9 +92,9 @@
   border-radius: 10px;
 }
 .container #social {
-  position: absolute;
-  bottom: 25rem;
-  right: 35rem;
+  position: fixed;
+  bottom: 6rem;
+  left: 5%;
 }
 .container #social ul {
   display: flex;
@@ -117,8 +117,5 @@
 @media screen and (max-width: 800px) {
   body {
     gap: 3rem;
-  }
-  body #social {
-    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

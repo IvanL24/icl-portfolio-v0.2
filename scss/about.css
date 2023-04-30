@@ -78,7 +78,7 @@ body {
   }
   .container .content {
     flex-direction: column;
-    width: 50ch;
+    width: 74%;
     padding: 3em;
   }
   .container .content #prf-cont {
