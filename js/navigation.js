@@ -22,11 +22,5 @@ export const navigation = [
         title: 'Contact',
         path: '/contact.html'
         
-    },
-    {
-        id: 'res',
-        title: 'Resume',
-        path: '/file/Ivan-Lavena-resume.docx'
-        
     }
 ];
