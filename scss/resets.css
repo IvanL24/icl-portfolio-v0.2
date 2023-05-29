@@ -42,4 +42,29 @@ body header {
 .nav #navigation a:hover {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 5%;
+  }
+  .nav #navigation {
+    display: none;
+    gap: 2%;
+    margin: 0;
+  }
+  .nav #navigation a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+  }
+  .nav #navigation a:hover {
+    background-color: black;
+    color: white;
+  }
 }/*# sourceMappingURL=resets.css.map */

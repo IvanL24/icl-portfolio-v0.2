@@ -117,4 +117,137 @@
 }
 #container #contact #formContainer {
   width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+    width: 100%;
+    overflow: hidden;
+  }
+  #container #landing {
+    height: 100vh;
+    flex-direction: column;
+  }
+  #container #landing h1 {
+    font-size: clamp(2.5rem, 12vw, 30rem);
+  }
+  #container #landing h2 {
+    font-size: clamp(2.5rem, 9vw, 11rem);
+  }
+  #container #landing p {
+    font-size: clamp(2.5rem, 4vw, 5rem);
+  }
+  #container #landing #leftContainer {
+    width: 100%;
+  }
+  #container #landing #leftContainer #innerLeftContainer {
+    margin: 10%;
+  }
+  #container #landing #leftContainer #innerLeftContainer #nameTop {
+    font-size: clamp(100px, 15vw, 278px);
+  }
+  #container #landing #leftContainer #innerLeftContainer #nameBottom {
+    font-size: clamp(100px, 15vw, 166px);
+    line-height: 75%;
+  }
+  #container #landing #leftContainer #innerLeftContainer #base {
+    margin-top: 10%;
+  }
+  #container #landing #leftContainer #innerLeftContainer #links {
+    color: black;
+    transition: 0.5s ease-in;
+    width: 2%;
+  }
+  #container #landing #leftContainer #innerLeftContainer #links:hover {
+    transform: scale(1.1);
+  }
+  #container #landing #rightContainer {
+    width: 100%;
+    color: white;
+  }
+  #container #landing #rightContainer #innerRightContainer {
+    margin: 10%;
+  }
+  #container #landing #rightContainer #innerRightContainer #web {
+    font-size: clamp(100px, 15vw, 278px);
+  }
+  #container #landing #rightContainer #innerRightContainer #dev {
+    font-size: clamp(60px, 10vw, 124px);
+  }
+  #container #landing #rightContainer #innerRightContainer #des {
+    font-size: clamp(70px, 10vw, 143px);
+  }
+  #container #about {
+    padding: 10% 5%;
+  }
+  #container #about #detailsContainer #details {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  #container #about #detailsContainer #details #brief {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+  }
+  #container #about #detailsContainer #details #imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+  }
+  #container #about #detailsContainer #details #imgContainer img {
+    width: 100%;
+  }
+  #container #works {
+    padding: 10% 5%;
+  }
+  #container #works #cardsContainer {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #container #works #cardsContainer #card {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+  }
+  #container #works #cardsContainer #card #cardImg {
+    width: 100%;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    border-radius: 12px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1.5/1;
+  }
+  #container #works #cardsContainer #card #moreBtn {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    align-self: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+  }
+  #container #works #cardsContainer #card #moreBtn:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.639);
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+  }
+  #container #works #cardsContainer #card:hover {
+    transform: scale(1.1);
+  }
+  #container #contact {
+    padding: 10% 5%;
+  }
+  #container #contact #formContainer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

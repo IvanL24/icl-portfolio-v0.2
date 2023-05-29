@@ -1,146 +1,3 @@
-// .container {
-//   height: 100%;
-//   width: 100%;
-//   display: flex;
-//   margin: auto;
-//   justify-content: center;
-//   .landing {
-  
-//     h3 {
-//       font-size: 4em;
-//       font-weight: 100;
-//     }
-  
-//     h1 {
-//       font-size: clamp(30px, 15vw, 500px);
-//       margin:0;
-//       font-weight: 500;
-//       transition: 300ms ease-in-out;
-//       animation: headerDrop 2s forwards ease;
-//     }
-
-//     @keyframes headerDrop {
-//       0% {
-//         transform: rotate(0) translateX(0) translateY(-100px);
-//         opacity: 0;
-//       }
-//       100% {
-//         transform: rotate(0) translateX(0px) translateY(0);
-//         opacity: 1;
-//       }
-//     }
-  
-//     p {
-//       display: flex;
-//       align-items: center;
-//       gap: 2rem;
-//       flex-direction: row-reverse;
-//       font-size: 2em;
-//     }
-
-//     span {
-//       font-size: clamp(3rem, 3vw, 6rem);
-//       font-weight: 200;
-//     }
-
-//     #Web {
-//       animation: Web 3s forwards ease;
-//       animation-delay: 2s;
-//       opacity: 0;
-//     }
-
-//     @keyframes Web {
-//       0% {
-//         transform: rotate(0) translateX(0) translateY(-100px);
-//         opacity: 0;
-//       }
-//       100% {
-//         transform: rotate(0) translateX(0px) translateY(0);
-//         opacity: 1;
-//       }
-//     }
-
-//     #Ui {
-//       animation: Ui 5s forwards ease;
-//       animation-delay: 4s;
-//       opacity: 0;
-//     }
-
-//     @keyframes Ui {
-//       0% {
-//         transform: rotate(0) translateX(0) translateY(-100px);
-//         opacity: 0;
-//       }
-//       100% {
-//         transform: rotate(0) translateX(0px) translateY(0);
-//         opacity: 1;
-//       }
-//     }
-  
-//     .note {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 1em;
-//     }
-  
-//     #pages {
-//       display: flex;
-//       flex-direction: column;
-//       margin: 5em;
-//       a {
-//         color: #000000;
-//         font-size: 2.5em;
-//         background-color: #D9D9D9;
-//         padding: 0.5em 2em;
-//         margin: 0.5em;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in-out;
-//       }
-//       :hover {
-//         color: #ffffff;
-//         background-color: #343434;
-//         border-radius: 10px;
-//       }
-//     }
-//   }
-
-//   #social {
-//       position: fixed;
-//       bottom: 6rem;
-//       left: 5%;
-
-//       ul {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 2rem;
-//         li {
-//               a {
-//                 margin: 0;
-//                 position: relative;
-//                 font-size: 3rem;
-//                 color: #000000;
-//                 transition: all 250ms;
-//               }
-//               :hover {
-//                 color: rgb(75, 177, 255);
-//                 transform: rotate(-15deg);
-//                 transition: transform 250ms ease-in-out;
-//               }
-//           }
-//       }
-//   }
-// }
-
-
-
-
-// @media screen and (max-width: 800px){
-//   body {
-//     gap: 3rem;
-
-//   }
-// }
-
 #container {
   #landing{
     height: 100vh;
@@ -278,6 +135,159 @@
 
     #formContainer{
       width: 60%;
+    }
+  }
+}
+
+// Mobile Styles
+
+@media screen and (max-width: 800px){
+  #container {
+    width: 100%;
+    overflow: hidden;
+    #landing{
+      height: 100vh;
+      flex-direction: column;
+      h1{
+        font-size: clamp(2.5rem, 12vw, 30rem);
+      }
+      h2{
+        font-size: clamp(2.5rem, 9vw, 11rem);
+      }
+      p{
+        font-size: clamp(2.5rem, 4vw, 5rem);
+      }
+      #leftContainer{
+        width: 100%;
+  
+        #innerLeftContainer{
+          margin: 10%;
+          
+          #nameTop{
+            font-size: clamp(100px, 15vw, 278px);
+          }
+          #nameBottom{
+            font-size: clamp(100px, 15vw, 166px);
+            line-height: 75%;
+          }
+          #base{
+            margin-top: 10%;
+          }
+          #links{
+            color: black;
+            transition: 0.5s ease-in;
+            width: 2%;
+          }
+          #links:hover {
+            transform: scale(1.1);
+          }
+        }
+  
+      }
+      #rightContainer{
+        width: 100%;
+        color: white;
+  
+        #innerRightContainer{
+          margin: 10%;
+          
+          #web{
+            font-size: clamp(100px, 15vw, 278px);
+          }
+          #dev{
+            font-size: clamp(60px, 10vw, 124px);
+          }
+          #des{
+            font-size: clamp(70px, 10vw, 143px);
+          }
+        }
+      }
+    }
+  
+    #about{
+      padding: 10% 5%;
+      #detailsContainer{
+        #details{
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          #brief{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            width: 100%;
+    
+            #skillsColumn{
+              // width: 70%;
+              // gap: 10%;
+            }
+          }
+          #imgContainer{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10%;
+            width: 100%;
+            height: 100%;
+    
+            img{
+              width: 100%;
+            }
+    
+          }
+        }
+      }
+    }
+  
+    #works{
+      padding: 10% 5%;
+  
+      #cardsContainer{
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        
+        #card{
+          width: 100%;
+          transition: 0.5s ease-in-out;
+          border-radius: 12px;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+  
+          #cardImg{
+            width: 100%;
+            min-height: min-content;
+            border-radius: 12px;
+            object-fit: cover;
+            aspect-ratio: 1.5/1;
+          }
+          #moreBtn{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            position: absolute;
+            align-self: center;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            border-radius: 12px;
+          }
+          #moreBtn:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.639);
+            backdrop-filter: blur(6px);
+          }
+        }
+        #card:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  
+    #contact{
+      padding: 10% 5%;
+  
+      #formContainer{
+        width: 100%;
+      }
     }
   }
 }
