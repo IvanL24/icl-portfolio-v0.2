@@ -1,21 +1,3 @@
-import { navigation } from "./navigation.js";
-
-
-let outputHTML = '';
-
-let nav = document.getElementById('navigation')
-
-navigation.forEach(function(page){
-
-    outputHTML +=
-
-    `<li><a href="${page.path}" id="${page.id}" >${page.title}</a></li>`
-
-});
-
-
-nav.innerHTML = outputHTML;
-
 const menu = document.getElementById('hamburger');
 
 const side = document.getElementById('navigation');
@@ -49,6 +31,7 @@ function toggleMenu(){
     }
 
 }
+
 
 
 

@@ -5,18 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="scss/resets.css">
   <link rel="stylesheet" href="scss/main.css">
 
+  
+  <script type="module" src="./js/allProjects.js"></script>
+  <script type="module" src="./js/desProjects.js"></script>
+  <script type="module" src="./js/devProjects.js"></script>
+
   <title>Home</title>
 </head>
 <body>
-  <header>
+  <header class="position-fixed w-100">
 
     <!-- Header navigation section -->
-    <nav>
+    <nav class="nav">
       <div id="hamburger">
         <div id="one"></div>
         <div id="two"></div>
@@ -24,18 +30,23 @@
       </div>
 
       
-
-      <ul id="navigation">
-        <!-- embedded navigation -->
+      <a id="logo" href="#">
+        <img id="logo-prmry" src="./resources/img/logo.svg" alt="">
+        <img id="logo-invert" src="./resources/img/logo-invert.svg" alt="">
+      </a>
+      <ul id="navigation" class="list-unstyled">
+        <li><a class="fs-4 px-5 py-3" href="#about">About</a></li>
+        <li><a class="fs-4 px-5 py-3" href="#works">Works</a></li>
+        <li><a class="fs-4 px-5 py-3" href="#contact">Contact</a></li>
         
             
-        <section id="social-mbl">
+        <!-- <section id="social-mbl">
           <ul>
             <li><a href="https://www.linkedin.com/in/ivanl24" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href="https://dribbble.com/tabibito24"><i class="fa-brands fa-dribbble"></i></a></li>
             <li><a href="https://www.instagram.com/icl.art24/"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
-        </section>
+        </section> -->
       </ul>
     </nav>
 
@@ -43,30 +54,156 @@
 
 
   <!-- landing page section -->
-  <div class="container">
-    <div class="landing">
+  <div id="container">
+    <section id="landing" class="d-flex w-100 justify-content-center">
 
-      <div class="note">
-        <h3>I am</h3>
-        <h1>
-          Ivan Lavena
-        </h1>
-        <p id="Web">
-          <span>Web Developer</span> a
-        </p>
-        <p id="Ui">
-          <span>UI Designer</span> and
-        </p>
+      <div id="leftContainer" class="d-flex justify-content-center">
+        <div id="innerLeftContainer">
+          <h1 id="nameTop">Ivan</h1>
+          <h1 id="nameBottom">Lavena</h1>
+          <p class="fs-2" id="base">Based in Calgary, Alberta</p>
+          <ul class="d-flex gap-5 list-unstyled">
+            <li class="fs-3"><a id="links" href="https://www.linkedin.com/in/ivanl24" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="fs-3"><a id="links" href="https://www.behance.net/ivanlavena1" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <section id="social">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/ivanl24" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a href="https://www.behance.net/ivanlavena1"><i class="fa-brands fa-behance"></i></a></li>
-        <li><a href="https://www.instagram.com/icl.art24/"><i class="fa-brands fa-instagram"></i></a></li>
-      </ul>
+      <div id="rightContainer" class="bg-dark d-flex justify-content-center">
+        <div id="innerRightContainer">
+          <h1 class="fw-bold" id="web">WEB</h1>
+          <h2 class="fw-bold" id="dev">Developer</h2>
+          <p class="fs-1">&</p>
+          <h2 class="fw-bold" id="des">Designer</h2>
+        </div>
+      </div>
     </section>
+
+    <!--about section  -->
+    <section id="about" class="w-100">
+      
+      <div id="details" class="d-flex gap-5 flex-column justify-content-between">
+        <h1 class="display-3 fw-bold">About</h1>
+        <div class="d-flex flex-row justify-content-between">
+          <section id="brief">
+            <p class="fs-3">I am a developer who explores different aspects of designs. I focus on crafting simple designs with minimalistic approach while ensuring a smooth user experience. I always ask myself, <span class="fw-bold">"How can I simplify a feature even more?"</span>. I believe that this question serves as both a challenging enigma and a vast realm to explore which offers endless possiblities. </p>
+  
+            <div>
+              <h2 class="mb-4">Skills</h2>
+              <div id="skillsColumn" class="d-flex justify-content-between">
+                <div id="firstColumn">
+                  <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="fs-4">Web Design</li>
+                    <li class="fs-4">Wireframing</li>
+                    <li class="fs-4">Prototyping</li>
+                    <li class="fs-4">HTML</li>
+                  </ul>  
+                </div>
+                <div id="secondColumn">
+                  <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="fs-4">CSS</li>
+                    <li class="fs-4">SASS</li>
+                    <li class="fs-4">JavaScript</li>
+                    <li class="fs-4">React Native</li>
+                  </ul>  
+                </div>
+                <div id="thirdColumn">
+                  <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="fs-4">Git</li>
+                    <li class="fs-4">Node.js</li>
+                  </ul>  
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="imgContainer">
+            <img id="image" src="./resources/img/profile_img.png" alt="">
+          </section>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Works section -->
+    <section id="works" class=" w-100">
+      <div class="d-flex justify-content-between align-items-base">
+        <h1 class="display-3 fw-bold mb-5">Works</h1>
+        <!-- <a href="works.html" class="fs-3">View all</a> -->
+      </div>
+      
+      <div id="cardsContainer" class="cards d-grid justify-content-between">
+        <div class="card border-0" id="card">
+          <img src="./resources/img/zara.png" class="card-img-top" id="cardImg" alt="...">
+          <div class="card-body pt-5 pb-5">
+            <h5 class="card-title fs-3">Case Study: ZARA</h5>
+          </div>
+          <a href="https://www.behance.net/gallery/163633007/UIUX-Case-Study-Zara-Redesign" target="_blank" id="moreBtn" class="d-flex flex-column align-items-start p-5 text-reset">
+            <p class="card-text fs-3 text-light">A case study focusing in improving the navigation experience of ZARA's website.</p>
+            <p class="m-auto text-light w-100">view project<span class="m-3"><img src="./resources/img/arrow-light.svg" alt=""></span></p>
+          </a>
+        </div>
+
+        <div class="card border-0" id="card">
+          <img src="./resources/img/speed-home.png" class="card-img-top" id="cardImg" alt="...">
+          <div class="card-body pt-5 pb-5">
+            <h5 class="card-title fs-3">Web Design: GIRZ</h5>
+          </div>
+          <a href="https://www.figma.com/proto/uZYiX0SemNqffDgEl1YuMp/road-bike?page-id=6%3A35&type=design&node-id=6-36&viewport=447%2C371%2C0.43&scaling=scale-down&starting-point-node-id=6%3A36" target="_blank" id="moreBtn" class="d-flex flex-column p-5 text-reset">
+            <p class="card-text fs-3 text-light">A design idea for a fictional bike store.</p>
+            <p class="m-auto text-light w-100">view project<span class="m-3"><img src="./resources/img/arrow-light.svg" alt=""></span></p>
+          </a>
+        </div>
+
+        <div class="card border-0" id="card">
+          <img src="./resources/img/D&D.png" class="card-img-top" id="cardImg" alt="...">
+          <div class="card-body pt-5 pb-5">
+            <h5 class="card-title fs-3">Web Design: Dine & Dash</h5>
+          </div>
+          <a href="https://www.figma.com/proto/zdLrnnbknr9RB0WUL21G4y/dine-n-dash?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2" target="_blank" id="moreBtn" class="d-flex flex-column p-5 text-reset">
+            <p class="card-text fs-3 text-light">A design idea for a diner or restaurant website.</p>
+            <p class="m-auto text-light w-100">view project<span class="m-3"><img src="./resources/img/arrow-light.svg" alt=""></span></p>
+          </a>
+        </div>
+
+    </section>
+
+    <section id="contact" class=" w-100">
+      <h1 class="display-3 fw-bold mb-5">Looking forward to work with you!</h1>
+      <div class="d-flex justify-content-center align-items-center flex-column">
+        <div id="formContainer" class="d-flex flex-column justify-content-center align-items-start">
+          <p class="display-5 text-align-start">Get in touch by sending me an email.</p>
+          <form class="w-100" action="https://formsubmit.co/2573f78231cbcfb2398cbbe01945120f" method="post">
+
+            <!-- honeypot -->
+            <input type="text" name="_honey" style="display:none">
+    
+            <!-- remove captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="mb-3">
+              <label for="nameInput">Name:</label>
+              <input type="text" name="Name" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="emailInput">Email:</label>
+              <input type="text" name="Email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="subjectInput">Subject:</label>
+              <input type="text" name="Subject" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="messageInput">Message:</label>
+              <textarea type="textarea" name="Message" class="form-control" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark px-5">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </div>
+  <footer class="w-100 d-flex justify-content-center pb-4">&copy; Ivan Lavena 2023</footer>
+
 
 
 

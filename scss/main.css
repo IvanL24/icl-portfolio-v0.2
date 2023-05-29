@@ -1,121 +1,120 @@
-.container {
-  height: 100%;
-  width: 100%;
+#container #landing {
+  height: 100vh;
+}
+#container #landing h1 {
+  font-size: clamp(2.5rem, 12vw, 30rem);
+}
+#container #landing h2 {
+  font-size: clamp(2.5rem, 9vw, 11rem);
+}
+#container #landing p {
+  font-size: clamp(2.5rem, 4vw, 5rem);
+}
+#container #landing #leftContainer {
+  width: 50%;
+}
+#container #landing #leftContainer #innerLeftContainer {
+  margin: 10%;
+}
+#container #landing #leftContainer #innerLeftContainer #nameTop {
+  font-size: clamp(100px, 15vw, 278px);
+}
+#container #landing #leftContainer #innerLeftContainer #nameBottom {
+  font-size: clamp(100px, 15vw, 166px);
+  line-height: 75%;
+}
+#container #landing #leftContainer #innerLeftContainer #base {
+  margin-top: 30%;
+}
+#container #landing #leftContainer #innerLeftContainer #links {
+  color: black;
+  transition: 0.5s ease-in;
+  width: 2%;
+}
+#container #landing #leftContainer #innerLeftContainer #links:hover {
+  transform: scale(1.1);
+}
+#container #landing #rightContainer {
+  width: 50%;
+  color: white;
+}
+#container #landing #rightContainer #innerRightContainer {
+  margin: 10%;
+}
+#container #landing #rightContainer #innerRightContainer #web {
+  font-size: clamp(100px, 15vw, 278px);
+}
+#container #landing #rightContainer #innerRightContainer #dev {
+  font-size: clamp(100px, 10vw, 124px);
+}
+#container #landing #rightContainer #innerRightContainer #des {
+  font-size: clamp(100px, 10vw, 143px);
+}
+#container #about {
+  padding: 10% 5%;
+}
+#container #about #details #brief {
   display: flex;
-  margin: auto;
-  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  width: 45%;
 }
-.container .landing h3 {
-  font-size: 4em;
-  font-weight: 100;
-}
-.container .landing h1 {
-  font-size: clamp(30px, 15vw, 500px);
-  margin: 0;
-  font-weight: 500;
-  transition: 300ms ease-in-out;
-  animation: headerDrop 2s forwards ease;
-}
-@keyframes headerDrop {
-  0% {
-    transform: rotate(0) translateX(0) translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) translateX(0px) translateY(0);
-    opacity: 1;
-  }
-}
-.container .landing p {
+#container #about #details #imgContainer {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  flex-direction: row-reverse;
-  font-size: 2em;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
 }
-.container .landing span {
-  font-size: clamp(3rem, 3vw, 6rem);
-  font-weight: 200;
+#container #about #details #imgContainer img {
+  width: 70%;
 }
-.container .landing #Web {
-  animation: Web 3s forwards ease;
-  animation-delay: 2s;
-  opacity: 0;
+#container #works {
+  padding: 10% 5%;
 }
-@keyframes Web {
-  0% {
-    transform: rotate(0) translateX(0) translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) translateX(0px) translateY(0);
-    opacity: 1;
-  }
+#container #works #cardsContainer {
+  gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.container .landing #Ui {
-  animation: Ui 5s forwards ease;
-  animation-delay: 4s;
-  opacity: 0;
+#container #works #cardsContainer #card {
+  width: 25vw;
+  transition: 0.5s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
 }
-@keyframes Ui {
-  0% {
-    transform: rotate(0) translateX(0) translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) translateX(0px) translateY(0);
-    opacity: 1;
-  }
+#container #works #cardsContainer #card #cardImg {
+  width: 100%;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1.5/1;
 }
-.container .landing .note {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.container .landing #pages {
-  display: flex;
-  flex-direction: column;
-  margin: 5em;
-}
-.container .landing #pages a {
-  color: #000000;
-  font-size: 2.5em;
-  background-color: #D9D9D9;
-  padding: 0.5em 2em;
-  margin: 0.5em;
+#container #works #cardsContainer #card #moreBtn {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-.container .landing #pages :hover {
-  color: #ffffff;
-  background-color: #343434;
-  border-radius: 10px;
-}
-.container #social {
-  position: fixed;
-  bottom: 6rem;
-  left: 5%;
-}
-.container #social ul {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  position: absolute;
+  align-self: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
 }
-.container #social ul li a {
-  margin: 0;
-  position: relative;
-  font-size: 3rem;
-  color: #000000;
-  transition: all 250ms;
+#container #works #cardsContainer #card #moreBtn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.639);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
-.container #social ul li :hover {
-  color: rgb(75, 177, 255);
-  transform: rotate(-15deg);
-  transition: transform 250ms ease-in-out;
+#container #works #cardsContainer #card:hover {
+  transform: scale(1.1);
 }
-
-@media screen and (max-width: 800px) {
-  body {
-    gap: 3rem;
-  }
+#container #contact {
+  padding: 10% 5%;
+}
+#container #contact #formContainer {
+  width: 60%;
 }/*# sourceMappingURL=main.css.map */
