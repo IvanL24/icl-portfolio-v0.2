@@ -69,6 +69,49 @@
 #container #about #details #imgContainer img {
   width: 70%;
 }
+#container #caseStudy {
+  padding: 10% 5%;
+}
+#container #caseStudy #cardsContainer {
+  gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#container #caseStudy #cardsContainer #card {
+  width: 25vw;
+  transition: 0.5s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+}
+#container #caseStudy #cardsContainer #card #cardImg {
+  width: 100%;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1.5/1;
+}
+#container #caseStudy #cardsContainer #card #moreBtn {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+}
+#container #caseStudy #cardsContainer #card #moreBtn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.639);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+#container #caseStudy #cardsContainer #card:hover {
+  transform: scale(1.1);
+}
 #container #works {
   padding: 10% 5%;
 }
